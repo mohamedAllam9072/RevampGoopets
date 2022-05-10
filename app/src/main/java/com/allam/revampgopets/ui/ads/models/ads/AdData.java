@@ -1,12 +1,13 @@
-package com.example.mygopets.ui.ads.models.ads;
+package com.allam.revampgopets.ui.ads.models.ads;
 
-import com.example.mygopets.ui.ads.models.AdDetails.Client;
-import com.example.mygopets.ui.ads.models.AdDetails.Images;
+import com.allam.revampgopets.ui.ads.models.AdDetails.Client;
+import com.allam.revampgopets.ui.ads.models.AdDetails.Images;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 import java.util.List;
+
 
 public class AdData implements Serializable {
     @Expose

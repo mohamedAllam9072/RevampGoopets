@@ -1,4 +1,4 @@
-package com.example.mygopets.utils;
+package com.allam.revampgopets.utils;
 
 public class GlobalValues {
     //SharedPreferences

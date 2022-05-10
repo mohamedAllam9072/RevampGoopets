@@ -1,4 +1,4 @@
-package com.example.mygopets.ui.ads.paging3;
+package com.allam.revampgopets.ui.ads.paging3;
 
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelKt;
@@ -7,7 +7,8 @@ import androidx.paging.PagingConfig;
 import androidx.paging.PagingData;
 import androidx.paging.rxjava3.PagingRx;
 
-import com.example.mygopets.ui.ads.models.ads.AdData;
+
+import com.allam.revampgopets.ui.ads.models.ads.AdData;
 
 import io.reactivex.rxjava3.core.Flowable;
 import kotlinx.coroutines.CoroutineScope;

@@ -1,4 +1,4 @@
-package com.example.mygopets.ui.home;
+package com.allam.revampgopets.ui.home;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,9 +8,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.mygopets.R;
-import com.example.mygopets.databinding.ItemHomeBinding;
-import com.example.mygopets.db.models.home.HomeListItem;
+import com.allam.revampgopets.R;
+import com.allam.revampgopets.databinding.ItemHomeBinding;
+import com.allam.revampgopets.db.models.home.HomeListItem;
 
 import java.util.ArrayList;
 import java.util.List;

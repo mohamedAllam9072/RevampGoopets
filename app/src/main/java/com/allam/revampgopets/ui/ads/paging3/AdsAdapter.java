@@ -1,4 +1,4 @@
-package com.example.mygopets.ui.ads.paging3;
+package com.allam.revampgopets.ui.ads.paging3;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -11,11 +11,10 @@ import androidx.paging.PagingDataAdapter;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mygopets.R;
-import com.example.mygopets.databinding.ItemAdBinding;
-import com.example.mygopets.ui.ads.models.ads.AdData;
-import com.example.mygopets.utils.MyUtils;
-
+import com.allam.revampgopets.ui.ads.models.ads.AdData;
+import com.allam.revampgopets.utils.MyUtils;
+import com.allam.revampgopets.R;
+import com.allam.revampgopets.databinding.ItemAdBinding;
 /*
     This adapter will handle listing of movies in recyclerview
  */

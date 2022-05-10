@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.mygopets.ui.home.HomeFragment"
+        android:name="com.allam.revampgopets.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home">
         <action
@@ -21,22 +21,22 @@
 
     <fragment
         android:id="@+id/navigation_all_chats"
-        android:name="com.example.mygopets.ui.allChats.AllChatsFragment"
+        android:name="com.allam.revampgopets.ui.allChats.AllChatsFragment"
         android:label="@string/title_all_chats"
         tools:layout="@layout/fragment_all_chats" />
 
     <fragment
         android:id="@+id/navigation_account"
-        android:name="com.example.mygopets.ui.account.AccountFragment"
+        android:name="com.allam.revampgopets.ui.account.AccountFragment"
         android:label="@string/title_account"
         tools:layout="@layout/fragment_account" />
     <fragment
         android:id="@+id/filterFragment"
-        android:name="com.example.mygopets.ui.filter.FilterFragment"
+        android:name="com.allam.revampgopets.ui.filter.FilterFragment"
         android:label="FilterFragment" />
     <fragment
         android:id="@+id/adsFragment"
-        android:name="com.example.mygopets.ui.ads.AdsFragment"
+        android:name="com.allam.revampgopets.ui.ads.AdsFragment"
         android:label="AdsFragment">
 
         <action
@@ -48,7 +48,7 @@
     </fragment>
     <fragment
         android:id="@+id/adDetailsFragment"
-        android:name="com.example.mygopets.ui.ads.AdDetailsFragment"
+        android:name="com.allam.revampgopets.ui.ads.AdDetailsFragment"
         android:label="AdDetailsFragment" />
 
 

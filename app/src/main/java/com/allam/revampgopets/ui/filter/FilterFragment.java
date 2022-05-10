@@ -1,4 +1,4 @@
-package com.example.mygopets.ui.filter;
+package com.allam.revampgopets.ui.filter;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,12 +13,13 @@ import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.mygopets.R;
-import com.example.mygopets.databinding.FragmentFilterBinding;
-import com.example.mygopets.db.models.content.category.Category;
-import com.example.mygopets.db.models.content.city.CityData;
-import com.example.mygopets.utils.Constants;
-import com.example.mygopets.utils.ScreenType;
+import com.allam.revampgopets.db.models.content.category.Category;
+import com.allam.revampgopets.db.models.content.city.CityData;
+import com.allam.revampgopets.utils.Constants;
+import com.allam.revampgopets.utils.ScreenType;
+import com.allam.revampgopets.R;
+import com.allam.revampgopets.databinding.FragmentFilterBinding;
+
 
 
 public class FilterFragment extends Fragment {
@@ -44,7 +45,7 @@ public class FilterFragment extends Fragment {
     }
 
     private void observers() {
-        viewModel.cityDataMutableLiveData.observe(this, response -> {
+        viewModel.cityDataMutableLiveData.observe(getViewLifecycleOwner(), response -> {
             ArrayAdapter<CityData> adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, response.getCityData());
             binding.city.setAdapter(adapter);
         });

@@ -1,14 +1,14 @@
-package com.example.mygopets.db.offlineRoom;
+package com.allam.revampgopets.db.offlineRoom;
 
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.example.mygopets.db.models.content.category.Category;
-import com.example.mygopets.db.models.content.city.CityData;
-import com.example.mygopets.db.offlineRoom.DAO.CategoryDAO;
-import com.example.mygopets.db.offlineRoom.DAO.CityDAO;
-import com.example.mygopets.utils.App;
+import com.allam.revampgopets.utils.App;
+import com.allam.revampgopets.db.models.content.category.Category;
+import com.allam.revampgopets.db.models.content.city.CityData;
+import com.allam.revampgopets.db.offlineRoom.DAO.CategoryDAO;
+import com.allam.revampgopets.db.offlineRoom.DAO.CityDAO;
 
 
 @Database(entities = {CityData.class, Category.class}, version = 1)

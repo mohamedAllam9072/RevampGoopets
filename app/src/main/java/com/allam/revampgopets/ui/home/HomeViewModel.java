@@ -1,4 +1,4 @@
-package com.example.mygopets.ui.home;
+package com.allam.revampgopets.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

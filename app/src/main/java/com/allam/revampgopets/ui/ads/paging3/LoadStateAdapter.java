@@ -1,4 +1,4 @@
-package com.example.mygopets.ui.ads.paging3;
+package com.allam.revampgopets.ui.ads.paging3;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,8 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.paging.LoadState;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mygopets.R;
-import com.example.mygopets.databinding.LoadStateItemBinding;
+import com.allam.revampgopets.R;
+import com.allam.revampgopets.databinding.LoadStateItemBinding;
 
 import org.jetbrains.annotations.NotNull;
 

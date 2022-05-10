@@ -1,4 +1,4 @@
-package com.example.mygopets.db.models.home;
+package com.allam.revampgopets.db.models.home;
 
 public class HomeListItem {
     private  int image;

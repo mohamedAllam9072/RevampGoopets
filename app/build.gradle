@@ -4,7 +4,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "coms.example.mygopests2"
+        applicationId "com.allam.revampgopets"
         minSdk 21
         targetSdk 31
         versionCode 1

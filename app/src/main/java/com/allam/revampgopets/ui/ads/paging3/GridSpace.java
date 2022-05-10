@@ -1,4 +1,4 @@
-package com.example.mygopets.ui.ads.paging3;
+package com.allam.revampgopets.ui.ads.paging3;
 
 import android.graphics.Rect;
 import android.view.View;

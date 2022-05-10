@@ -1,9 +1,9 @@
-package com.example.mygopets.db.remote;
+package com.allam.revampgopets.db.remote;
 
-import com.example.mygopets.db.models.content.category.CategoryResponse;
-import com.example.mygopets.db.models.content.city.CityResponse;
-import com.example.mygopets.ui.ads.models.AdDetails.AdDetailsResponse;
-import com.example.mygopets.ui.ads.models.ads.AdResponse;
+import com.allam.revampgopets.db.models.content.category.CategoryResponse;
+import com.allam.revampgopets.db.models.content.city.CityResponse;
+import com.allam.revampgopets.ui.ads.models.AdDetails.AdDetailsResponse;
+import com.allam.revampgopets.ui.ads.models.ads.AdResponse;
 
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.core.Single;

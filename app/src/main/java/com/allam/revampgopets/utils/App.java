@@ -1,4 +1,4 @@
-package com.example.mygopets.utils;
+package com.allam.revampgopets.utils;
 
 import android.app.Application;
 import android.content.Context;

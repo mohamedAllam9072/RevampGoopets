@@ -1,4 +1,4 @@
-package com.example.mygopets.utils;
+package com.allam.revampgopets.utils;
 
 public class Constants {
     public static final String BASE_URL = "https://gooopets.net/api/";

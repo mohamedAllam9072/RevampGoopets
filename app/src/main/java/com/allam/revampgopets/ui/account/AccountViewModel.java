@@ -1,4 +1,4 @@
-package com.example.mygopets.ui.account;
+package com.allam.revampgopets.ui.account;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

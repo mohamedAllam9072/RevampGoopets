@@ -1,4 +1,4 @@
-package com.example.mygopets.ui.ads;
+package com.allam.revampgopets.ui.ads;
 
 import android.content.Context;
 
@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.mygopets.R;
+import com.allam.revampgopets.R;
 
 
 public class AdsPagerAdapter extends FragmentPagerAdapter {

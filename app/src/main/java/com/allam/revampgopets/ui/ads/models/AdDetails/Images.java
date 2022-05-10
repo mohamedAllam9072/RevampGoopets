@@ -1,4 +1,4 @@
-package com.example.mygopets.ui.ads.models.AdDetails;
+package com.allam.revampgopets.ui.ads.models.AdDetails;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

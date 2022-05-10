@@ -1,13 +1,13 @@
-package com.example.mygopets.db.remote;
+package com.allam.revampgopets.db.remote;
 
-import com.example.mygopets.ui.ads.models.ads.AdRequest;
-import com.example.mygopets.ui.ads.models.ads.AdResponse;
-import com.example.mygopets.db.models.content.category.CategoryResponse;
-import com.example.mygopets.db.models.content.city.CityResponse;
-import com.example.mygopets.ui.ads.models.AdDetails.AdDetailsResponse;
-import com.example.mygopets.utils.Constants;
-import com.example.mygopets.utils.LanguageUtils;
-import com.example.mygopets.utils.TokenUtils;
+import com.allam.revampgopets.ui.ads.models.ads.AdRequest;
+import com.allam.revampgopets.ui.ads.models.ads.AdResponse;
+import com.allam.revampgopets.db.models.content.category.CategoryResponse;
+import com.allam.revampgopets.db.models.content.city.CityResponse;
+import com.allam.revampgopets.ui.ads.models.AdDetails.AdDetailsResponse;
+import com.allam.revampgopets.utils.Constants;
+import com.allam.revampgopets.utils.LanguageUtils;
+import com.allam.revampgopets.utils.TokenUtils;
 
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.core.Single;

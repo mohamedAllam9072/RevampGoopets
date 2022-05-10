@@ -1,4 +1,4 @@
-package com.example.mygopets.db.models.content.category;
+package com.allam.revampgopets.db.models.content.category;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;

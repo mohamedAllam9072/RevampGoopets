@@ -1,4 +1,4 @@
-package com.example.mygopets.ui.home;
+package com.allam.revampgopets.ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,9 +11,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
-import com.example.mygopets.R;
-import com.example.mygopets.databinding.FragmentHomeBinding;
-import com.example.mygopets.utils.Constants;
+import com.allam.revampgopets.R;
+import com.allam.revampgopets.databinding.FragmentHomeBinding;
+import com.allam.revampgopets.utils.Constants;
 
 public class HomeFragment extends Fragment {
 

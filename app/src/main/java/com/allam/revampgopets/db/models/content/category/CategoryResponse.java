@@ -1,7 +1,7 @@
-package com.example.mygopets.db.models.content.category;
+package com.allam.revampgopets.db.models.content.category;
 
-import com.example.mygopets.db.models.content.city.Links;
-import com.example.mygopets.db.models.content.city.Meta;
+import com.allam.revampgopets.db.models.content.city.Links;
+import com.allam.revampgopets.db.models.content.city.Meta;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 

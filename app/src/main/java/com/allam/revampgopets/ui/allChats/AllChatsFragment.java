@@ -1,4 +1,4 @@
-package com.example.mygopets.ui.allChats;
+package com.allam.revampgopets.ui.allChats;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,8 +13,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.mygopets.R;
-import com.example.mygopets.databinding.FragmentAllChatsBinding;
+import com.allam.revampgopets.R;
+import com.allam.revampgopets.databinding.FragmentAllChatsBinding;
 
 
 public class AllChatsFragment extends Fragment {

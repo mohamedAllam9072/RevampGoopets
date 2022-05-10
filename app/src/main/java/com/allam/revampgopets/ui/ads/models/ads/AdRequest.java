@@ -1,4 +1,4 @@
-package com.example.mygopets.ui.ads.models.ads;
+package com.allam.revampgopets.ui.ads.models.ads;
 
 
 import com.google.gson.annotations.Expose;

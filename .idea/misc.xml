@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/fragment_account.xml" value="0.10520833333333333" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/fragment_dashboard.xml" value="0.10520833333333333" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/fragment_filter.xml" value="0.10520833333333333" />

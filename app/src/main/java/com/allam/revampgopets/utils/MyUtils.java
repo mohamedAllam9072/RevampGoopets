@@ -1,4 +1,4 @@
-package com.example.mygopets.utils;
+package com.allam.revampgopets.utils;
 
 import android.app.Activity;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageView;
 
-import com.example.mygopets.R;
+import com.allam.revampgopets.R;
 import com.squareup.picasso.Picasso;
 
 import java.text.SimpleDateFormat;

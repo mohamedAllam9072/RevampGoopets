@@ -1,4 +1,4 @@
-package com.example.mygopets.ui.ads;
+package com.allam.revampgopets.ui.ads;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,12 +10,13 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
-import com.example.mygopets.R;
-import com.example.mygopets.databinding.FragmentListBinding;
-import com.example.mygopets.ui.ads.models.ads.AdData;
-import com.example.mygopets.ui.ads.paging3.AdViewModel;
-import com.example.mygopets.ui.ads.paging3.AdsAdapter;
-import com.example.mygopets.ui.ads.paging3.LoadStateAdapter;
+import com.allam.revampgopets.ui.ads.models.ads.AdData;
+import com.allam.revampgopets.ui.ads.paging3.AdViewModel;
+import com.allam.revampgopets.ui.ads.paging3.AdsAdapter;
+import com.allam.revampgopets.ui.ads.paging3.LoadStateAdapter;
+
+import com.allam.revampgopets.R;
+import com.allam.revampgopets.databinding.FragmentListBinding;
 
 public class SellBuyFragment extends Fragment implements AdsAdapter.OnClick {
     private FragmentListBinding binding;

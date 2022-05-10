@@ -1,14 +1,14 @@
-package com.example.mygopets.ui.ads.paging3;
+package com.allam.revampgopets.ui.ads.paging3;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.paging.PagingState;
 import androidx.paging.rxjava3.RxPagingSource;
 
-import com.example.mygopets.ui.ads.models.ads.AdData;
-import com.example.mygopets.ui.ads.models.ads.AdRequest;
-import com.example.mygopets.ui.ads.models.ads.AdResponse;
-import com.example.mygopets.db.remote.ApiClient;
+import com.allam.revampgopets.db.remote.ApiClient;
+import com.allam.revampgopets.ui.ads.models.ads.AdData;
+import com.allam.revampgopets.ui.ads.models.ads.AdRequest;
+import com.allam.revampgopets.ui.ads.models.ads.AdResponse;
 
 import org.jetbrains.annotations.NotNull;
 

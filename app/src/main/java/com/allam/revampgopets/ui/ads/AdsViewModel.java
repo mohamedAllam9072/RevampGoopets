@@ -1,11 +1,11 @@
-package com.example.mygopets.ui.ads;
+package com.allam.revampgopets.ui.ads;
 
 import androidx.lifecycle.ViewModel;
 
-import com.example.mygopets.db.Repos.AdsRepo;
-import com.example.mygopets.ui.ads.models.ads.AdRequest;
-import com.example.mygopets.ui.ads.models.ads.AdResponse;
-import com.example.mygopets.utils.SingleMutableLiveData;
+import com.allam.revampgopets.db.Repos.AdsRepo;
+import com.allam.revampgopets.ui.ads.models.ads.AdRequest;
+import com.allam.revampgopets.ui.ads.models.ads.AdResponse;
+import com.allam.revampgopets.utils.SingleMutableLiveData;
 
 public class AdsViewModel extends ViewModel {
     private AdsRepo adsRepo;

@@ -1,4 +1,4 @@
-package com.example.mygopets.ui.ads.adapters;
+package com.allam.revampgopets.ui.ads.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,10 +8,11 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mygopets.R;
-import com.example.mygopets.databinding.ItemAdBinding;
-import com.example.mygopets.ui.ads.models.ads.AdData;
-import com.example.mygopets.utils.MyUtils;
+import com.allam.revampgopets.R;
+import com.allam.revampgopets.databinding.ItemAdBinding;
+import com.allam.revampgopets.ui.ads.models.ads.AdData;
+import com.allam.revampgopets.utils.MyUtils;
+
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.example.mygopets.ui.ads;
+package com.allam.revampgopets.ui.ads;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,10 +9,10 @@ import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.mygopets.R;
-import com.example.mygopets.databinding.FragmentAdDetailsBinding;
-import com.example.mygopets.ui.ads.models.ads.AdData;
-import com.example.mygopets.utils.MyUtils;
+import com.allam.revampgopets.R;
+import com.allam.revampgopets.databinding.FragmentAdDetailsBinding;
+import com.allam.revampgopets.ui.ads.models.ads.AdData;
+import com.allam.revampgopets.utils.MyUtils;
 
 public class AdDetailsFragment extends Fragment {
     private FragmentAdDetailsBinding binding;

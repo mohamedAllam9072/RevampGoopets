@@ -1,4 +1,4 @@
-package com.example.mygopets.ui.ads;
+package com.allam.revampgopets.ui.ads;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,8 +8,9 @@ import android.view.ViewGroup;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
-import com.example.mygopets.R;
-import com.example.mygopets.databinding.FragmentListBinding;
+import com.allam.revampgopets.R;
+import com.allam.revampgopets.databinding.FragmentListBinding;
+
 
 public class AdoptedAnimalsFragment extends Fragment {
     private FragmentListBinding binding;

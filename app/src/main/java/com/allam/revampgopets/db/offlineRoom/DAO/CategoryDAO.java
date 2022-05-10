@@ -1,4 +1,4 @@
-package com.example.mygopets.db.offlineRoom.DAO;
+package com.allam.revampgopets.db.offlineRoom.DAO;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -8,7 +8,7 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.mygopets.db.models.content.category.Category;
+import com.allam.revampgopets.db.models.content.category.Category;
 
 import java.util.List;
 

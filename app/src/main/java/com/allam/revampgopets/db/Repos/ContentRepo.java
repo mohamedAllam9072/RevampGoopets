@@ -1,4 +1,4 @@
-package com.example.mygopets.db.Repos;
+package com.allam.revampgopets.db.Repos;
 
 import android.util.Log;
 
@@ -6,15 +6,15 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.mygopets.db.remote.ApiClient;
-import com.example.mygopets.db.models.content.category.Category;
-import com.example.mygopets.db.models.content.category.CategoryResponse;
-import com.example.mygopets.db.models.content.city.CityData;
-import com.example.mygopets.db.models.content.city.CityResponse;
-import com.example.mygopets.db.offlineRoom.DAO.CategoryDAO;
-import com.example.mygopets.db.offlineRoom.DAO.CityDAO;
-import com.example.mygopets.db.offlineRoom.OfflineDatabase;
-import com.example.mygopets.utils.SingleMutableLiveData;
+import com.allam.revampgopets.db.remote.ApiClient;
+import com.allam.revampgopets.db.models.content.category.Category;
+import com.allam.revampgopets.db.models.content.category.CategoryResponse;
+import com.allam.revampgopets.db.models.content.city.CityData;
+import com.allam.revampgopets.db.models.content.city.CityResponse;
+import com.allam.revampgopets.db.offlineRoom.DAO.CategoryDAO;
+import com.allam.revampgopets.db.offlineRoom.DAO.CityDAO;
+import com.allam.revampgopets.db.offlineRoom.OfflineDatabase;
+import com.allam.revampgopets.utils.SingleMutableLiveData;
 
 import java.util.List;
 
@@ -66,78 +66,78 @@ public class ContentRepo {
                 .subscribe();
     }
 
-    public MutableLiveData<CityData> getAllCitesOnline() {
-        Observable<CityResponse> observable =
-                ApiClient.getINSTANCE()
-                        .cities(1)
-                        .subscribeOn(Schedulers.io())
-                        .observeOn(AndroidSchedulers.mainThread());
-        Observer<CityResponse> observer = new Observer<CityResponse>() {
-            @Override
-            public void onSubscribe(@NonNull Disposable d) {
-                Log.d(TAG, "onSubscribe: ");
-            }
-
-            @Override
-            public void onNext(@NonNull CityResponse response) {
-                if (response != null) {
-                    cityResponseSingleMutableLiveData.postValue(response);
-                    insertCities(response.getCityData());
-                } else {
-                    errorMessageMutableLiveData.postValue(response.getMessage());
-                }
-
-            }
-
-            @Override
-            public void onError(@NonNull Throwable e) {
-                errorMessageMutableLiveData.postValue(e.getMessage());
-            }
-
-            @Override
-            public void onComplete() {
-                Log.d(TAG, "onComplete: ");
-            }
-        };
-        observable.subscribe(observer);
-        return null;
-    }
-
-    public void getAllCategoriesOnline() {
-        Observable<CategoryResponse> observable =
-                ApiClient.getINSTANCE()
-                        .categories()
-                        .subscribeOn(Schedulers.io())
-                        .observeOn(AndroidSchedulers.mainThread());
-        Observer<CategoryResponse> observer = new Observer<CategoryResponse>() {
-            @Override
-            public void onSubscribe(@NonNull Disposable d) {
-                Log.d(TAG, "onSubscribe: ");
-            }
-
-            @Override
-            public void onNext(@NonNull CategoryResponse response) {
-                if (response != null) {
-                    categoryResponseSingleMutableLiveData.postValue(response);
-                    insertCategories(response.getData());
-                } else {
-                    errorMessageMutableLiveData.postValue(response.getMessage());
-                }
-
-            }
-
-            @Override
-            public void onError(@NonNull Throwable e) {
-                errorMessageMutableLiveData.postValue(e.getMessage());
-            }
-
-            @Override
-            public void onComplete() {
-                Log.d(TAG, "onComplete: ");
-            }
-        };
-        observable.subscribe(observer);
-    }
+//    public MutableLiveData<CityData> getAllCitesOnline() {
+////        Observable<CityResponse> observable =
+////                ApiClient.getINSTANCE()
+////                        .cities(1)
+////                        .subscribeOn(Schedulers.io())
+////                        .observeOn(AndroidSchedulers.mainThread());
+////        Observer<CityResponse> observer = new Observer<CityResponse>() {
+////            @Override
+////            public void onSubscribe(@NonNull Disposable d) {
+////                Log.d(TAG, "onSubscribe: ");
+////            }
+////
+////            @Override
+////            public void onNext(@NonNull CityResponse response) {
+////                if (response != null) {
+////                    cityResponseSingleMutableLiveData.postValue(response);
+////                    insertCities(response.getCityData());
+////                } else {
+////                    errorMessageMutableLiveData.postValue(response.getMessage());
+////                }
+////
+////            }
+////
+////            @Override
+////            public void onError(@NonNull Throwable e) {
+////                errorMessageMutableLiveData.postValue(e.getMessage());
+////            }
+////
+////            @Override
+////            public void onComplete() {
+////                Log.d(TAG, "onComplete: ");
+////            }
+////        };
+////        observable.subscribe(observer);
+////        return null;
+////    }
+////
+////    public void getAllCategoriesOnline() {
+////        Observable<CategoryResponse> observable =
+////                ApiClient.getINSTANCE()
+////                        .categories()
+////                        .subscribeOn(Schedulers.io())
+////                        .observeOn(AndroidSchedulers.mainThread());
+////        Observer<CategoryResponse> observer = new Observer<CategoryResponse>() {
+////            @Override
+////            public void onSubscribe(@NonNull Disposable d) {
+////                Log.d(TAG, "onSubscribe: ");
+////            }
+////
+////            @Override
+////            public void onNext(@NonNull CategoryResponse response) {
+////                if (response != null) {
+////                    categoryResponseSingleMutableLiveData.postValue(response);
+////                    insertCategories(response.getData());
+////                } else {
+////                    errorMessageMutableLiveData.postValue(response.getMessage());
+////                }
+////
+////            }
+////
+////            @Override
+////            public void onError(@NonNull Throwable e) {
+////                errorMessageMutableLiveData.postValue(e.getMessage());
+////            }
+////
+////            @Override
+////            public void onComplete() {
+////                Log.d(TAG, "onComplete: ");
+////            }
+////        };
+////        observable.subscribe(observer);
+//    }
 
     public LiveData<List<CityData>> getAllCitesOffline() {
         return cityDAO.getAllCities();

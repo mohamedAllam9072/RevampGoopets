@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mygopets">
+    package="com.allam.revampgopets">
     <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:name=".utils.App"
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyGopests2">
         <activity
-            android:name="com.example.mygopets.ui.home.MainActivity"
+            android:name="com.allam.revampgopets.ui.home.MainActivity"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
