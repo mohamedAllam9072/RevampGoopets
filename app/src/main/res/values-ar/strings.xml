@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MyGopets</string>
+    <string name="app_name">RevampGoPets</string>
     <string name="title_home">الرئيسية</string>
     <string name="title_all_chats">الرسائل</string>
     <string name="title_account">حسابي</string>

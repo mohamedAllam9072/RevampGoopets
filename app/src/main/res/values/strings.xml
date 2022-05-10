@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyGopets</string>
+    <string name="app_name">RevampGoPets</string>
     <string name="title_home">Home</string>
     <string name="title_all_chats">Messages</string>
     <string name="title_account">Account</string>
