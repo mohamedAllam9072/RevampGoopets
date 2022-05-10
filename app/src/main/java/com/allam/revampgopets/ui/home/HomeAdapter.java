@@ -7,18 +7,18 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
 import com.allam.revampgopets.R;
 import com.allam.revampgopets.databinding.ItemHomeBinding;
-import com.allam.revampgopets.db.models.home.HomeListItem;
+import com.allam.revampgopets.ui.home.models.HomeListItem;
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.mVH> {
-    private Context context;
-    private List<HomeListItem> list = new ArrayList<>();
-    private onItemClick onItemClick;
+    private final Context context;
+    private final List<HomeListItem> list = new ArrayList<>();
+    private final onItemClick onItemClick;
 
     public HomeAdapter(Context context, onItemClick onItemClick) {
         this.context = context;

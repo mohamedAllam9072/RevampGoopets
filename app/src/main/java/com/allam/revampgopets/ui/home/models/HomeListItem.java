@@ -1,14 +1,14 @@
-package com.allam.revampgopets.db.models.home;
+package com.allam.revampgopets.ui.home.models;
 
 public class HomeListItem {
-    private  int image;
-    private  String title;
-    private int screenFlag;
+    private final int image;
+    private final String title;
+    private final int screenFlag;
 
-    public HomeListItem(int image, String title,int screenFlag) {
+    public HomeListItem(int image, String title, int screenFlag) {
         this.image = image;
         this.title = title;
-        this.screenFlag =screenFlag;
+        this.screenFlag = screenFlag;
     }
 
     public int getScreenFlag() {
