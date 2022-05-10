@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/build/classes" />
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/OUT PROJECTS/MyGopests2/app/src/main/res/layout/activity_main.xml" value="0.121875" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable-v24/bg1.xml" value="0.1825" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable-v24/ic_adopt_animals.xml" value="0.136" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable-v24/ic_carve.xml" value="0.1825" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2155" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable-v24/ic_mated_animals.xml" value="0.136" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/bg1.xml" value="0.1825" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/bg_gold.xml" value="0.136" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/bg_tabIndicator.xml" value="0.1145" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/bg_tab_indicator.xml" value="0.136" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/bg_white.xml" value="0.136" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/ic_account.xml" value="0.2155" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/ic_adopt_animals.xml" value="0.136" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/ic_arrow_back_black.xml" value="0.2155" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/ic_call.xml" value="0.2155" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/ic_carve.xml" value="0.2155" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/ic_clinic_veterinary.xml" value="0.136" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/ic_filter.xml" value="0.1135" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/ic_home.xml" value="0.2155" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2155" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/ic_mated_animals.xml" value="0.136" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/ic_message.xml" value="0.2155" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/ic_message2.xml" value="0.2155" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/ic_search.xml" value="0.2155" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/ic_sell_buy.xml" value="0.136" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/ic_share.xml" value="0.248" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/ic_shops.xml" value="0.136" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/ic_special_trainer.xml" value="0.136" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable/shadow.xml" value="0.1165" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/layout/activity_main.xml" value="0.2421875" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/layout/fragment_account.xml" value="0.10520833333333333" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/layout/fragment_ad_details.xml" value="0.2421875" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/layout/fragment_ads.xml" value="0.1685185185185185" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/layout/fragment_all_chats.xml" value="0.10520833333333333" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/layout/fragment_filter.xml" value="0.2421875" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/layout/fragment_home.xml" value="0.2421875" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/layout/fragment_list.xml" value="0.2421875" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/layout/fragment_list1.xml" value="0.2421875" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/layout/item_ad.xml" value="0.2421875" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/layout/item_home.xml" value="0.2421875" />
+        <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/layout/load_state_item.xml" value="0.2421875" />
+      </map>
+    </option>
   </component>
-  <component name="ProjectType">
-    <option name="id" value="Android" />
-  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

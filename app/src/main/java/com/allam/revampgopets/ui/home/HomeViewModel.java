@@ -1,4 +1,4 @@
-package com.allam.revampgopets.ui.home;
+package com.example.mygopets.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel;
 
 public class HomeViewModel extends ViewModel {
 
-    private final MutableLiveData<String> mText;
+    private MutableLiveData<String> mText;
 
     public HomeViewModel() {
         mText = new MutableLiveData<>();

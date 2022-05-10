@@ -10,7 +10,6 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.allam.revampgopets.databinding.FragmentDashboardBinding;
 
 public class DashboardFragment extends Fragment {
 

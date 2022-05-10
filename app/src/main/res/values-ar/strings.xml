@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyGopets</string>
+    <string name="title_home">الرئيسية</string>
+    <string name="title_all_chats">الرسائل</string>
+    <string name="title_account">حسابي</string>
+    <string name="filter">تصفية</string>
+    <string name="city">مدينة</string>
+    <string name="area">منطقة</string>
+    <string name="city_and_area">حدد المنطقة و المدينة</string>
+    <string name="category">حدد الفئة</string>
+    <string name="search">بحث</string>
+    <string name="apply">تنفيذ</string>
+    <string name="all_services">كل الخدمات</string>
+    <string name="service_type">نوع الخدمة</string>
+    <string name="brand">الماركة</string>
+    <string name="ads">ads</string>
+    <string name="shops">shops</string>
+    <string name="special_trainer">trainer</string>
+    <string name="vets_grooming_delivery">cars</string>
+    <string name="clinic_veterinary">vets</string>
+    <string name="sallAndBuy">Sall Buy</string>
+    <string name="adoptedAnimals">Adopted</string>
+    <string name="matedAnimals">Mated</string>
+    <string name="no_data_available">No Data Available</string>
+    <string name="egp">EGP</string>
+    <string name="advertiser">Advertiser</string>
+    <string name="description">Description</string>
+</resources>

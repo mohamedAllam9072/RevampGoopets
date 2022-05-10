@@ -3,23 +3,53 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/adsFragment">
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.allam.revampgopets.ui.home.HomeFragment"
+        android:name="com.example.mygopets.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_adsFragment"
+            app:destination="@id/adsFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.allam.revampgopets.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_all_chats"
+        android:name="com.example.mygopets.ui.allChats.AllChatsFragment"
+        android:label="@string/title_all_chats"
+        tools:layout="@layout/fragment_all_chats" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.allam.revampgopets.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_account"
+        android:name="com.example.mygopets.ui.account.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.example.mygopets.ui.filter.FilterFragment"
+        android:label="FilterFragment" />
+    <fragment
+        android:id="@+id/adsFragment"
+        android:name="com.example.mygopets.ui.ads.AdsFragment"
+        android:label="AdsFragment">
+
+        <action
+            android:id="@+id/action_adsFragment_to_filterFragment"
+            app:destination="@id/filterFragment" />
+        <action
+            android:id="@+id/action_adsFragment_to_adDetailsFragment"
+            app:destination="@id/adDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adDetailsFragment"
+        android:name="com.example.mygopets.ui.ads.AdDetailsFragment"
+        android:label="AdDetailsFragment" />
+
+
 </navigation>

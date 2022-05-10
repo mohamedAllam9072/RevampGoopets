@@ -1,6 +1,31 @@
 <resources>
-    <string name="app_name">RevampGopets</string>
+    <string name="app_name">MyGopets</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_all_chats">Messages</string>
+    <string name="title_account">Account</string>
+    <string name="filter">Filter</string>
+    <string name="city">City</string>
+    <string name="area">Area</string>
+    <string name="city_and_area">City and Area</string>
+    <string name="category">Category</string>
+    <string name="search">Search</string>
+    <string name="apply">Apply</string>
+    <string name="all_services">All Services</string>
+    <string name="service_type">Service Type</string>
+    <string name="brand">Brand</string>
+    <string name="ads">ads</string>
+    <string name="shops">shops</string>
+    <string name="special_trainer">trainer</string>
+    <string name="vets_grooming_delivery">cars</string>
+    <string name="clinic_veterinary">vets</string>
+    <string name="sallAndBuy">Sell Buy</string>
+    <string name="adoptedAnimals">Adopted</string>
+    <string name="matedAnimals">Mated </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="no_data_available">No Data Available</string>
+    <string name="egp">EGP</string>
+    <string name="advertiser">Advertiser</string>
+    <string name="view_profile">View Profile</string>
+    <string name="description">Description</string>
 </resources>
