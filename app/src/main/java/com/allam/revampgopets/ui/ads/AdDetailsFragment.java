@@ -24,7 +24,7 @@ public class AdDetailsFragment extends Fragment {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_ad_details, container, false);
         adDetailsViewModel = new ViewModelProvider(this).get(AdDetailsViewModel.class);
         getArgs();
-       // getAdDetails();
+        getAdDetails();
         return binding.getRoot();
     }
 

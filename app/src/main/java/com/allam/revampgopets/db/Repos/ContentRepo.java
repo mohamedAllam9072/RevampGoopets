@@ -1,12 +1,7 @@
 package com.allam.revampgopets.db.Repos;
 
-import android.util.Log;
-
-import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
 
-import com.allam.revampgopets.db.remote.ApiClient;
 import com.allam.revampgopets.db.models.content.category.Category;
 import com.allam.revampgopets.db.models.content.category.CategoryResponse;
 import com.allam.revampgopets.db.models.content.city.CityData;
@@ -18,11 +13,9 @@ import com.allam.revampgopets.utils.SingleMutableLiveData;
 
 import java.util.List;
 
-import io.reactivex.Observable;
-import io.reactivex.Observer;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
+import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 
 public class ContentRepo {
     private static final String TAG = "ContentRepo";
