@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
 
 import com.allam.revampgopets.R;
 import com.allam.revampgopets.databinding.FragmentAdDetailsBinding;
@@ -23,7 +24,7 @@ import com.smarteist.autoimageslider.SliderView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AdDetailsFragment extends Fragment {
+public class AdDetailsFragment extends Fragment implements SliderAdapter.onItemClick {
     private FragmentAdDetailsBinding binding;
     private AdData adItem;
     private AdDetailsViewModel adDetailsViewModel;
@@ -76,7 +77,7 @@ public class AdDetailsFragment extends Fragment {
     }
 
     private void slider(List<Images> images) {
-        SliderAdapter sliderAdapter = new SliderAdapter(getContext());
+        SliderAdapter sliderAdapter = new SliderAdapter(getContext(), this::onItemClick);
         sliderAdapter.setImages(images);
         binding.imageSlider.setSliderAdapter(sliderAdapter);
         binding.imageSlider.setIndicatorAnimation(IndicatorAnimationType.WORM);
@@ -96,4 +97,10 @@ public class AdDetailsFragment extends Fragment {
         }
     }
 
+    @Override
+    public void onItemClick() {
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("AD_ITEM2", sliderImagesList);
+        Navigation.findNavController(getView()).navigate(R.id.action_adDetailsFragment_to_imagesSliderFragment, bundle);
+    }
 }

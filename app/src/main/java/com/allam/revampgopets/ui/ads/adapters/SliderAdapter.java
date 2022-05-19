@@ -16,9 +16,11 @@ import java.util.List;
 public class SliderAdapter extends SliderViewAdapter<SliderAdapter.mVH> {
     private final Context context;
     private List<Images> images = new ArrayList<>();
+    private final onItemClick onItemClick;
 
-    public SliderAdapter(Context context) {
+    public SliderAdapter(Context context, onItemClick onItemClick) {
         this.context = context;
+        this.onItemClick = onItemClick;
     }
 
 
@@ -31,6 +33,7 @@ public class SliderAdapter extends SliderViewAdapter<SliderAdapter.mVH> {
     @Override
     public void onBindViewHolder(mVH holder, int position) {
         MyUtils.mPicasso(context, images.get(position).getImage(), holder.binding.mainImage);
+        holder.binding.getRoot().setOnClickListener(view -> onItemClick.onItemClick());
     }
 
     @Override
@@ -50,5 +53,9 @@ public class SliderAdapter extends SliderViewAdapter<SliderAdapter.mVH> {
             super(binding.getRoot());
             this.binding = binding;
         }
+    }
+
+    public interface onItemClick {
+        void onItemClick();
     }
 }

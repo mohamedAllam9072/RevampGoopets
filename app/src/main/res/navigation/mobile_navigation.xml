@@ -49,7 +49,15 @@
     <fragment
         android:id="@+id/adDetailsFragment"
         android:name="com.allam.revampgopets.ui.ads.AdDetailsFragment"
-        android:label="AdDetailsFragment" />
+        android:label="AdDetailsFragment">
+        <action
+            android:id="@+id/action_adDetailsFragment_to_imagesSliderFragment"
+            app:destination="@id/imagesSliderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imagesSliderFragment"
+        android:name="com.allam.revampgopets.ui.ads.ImagesSliderFragment"
+        android:label="ImagesSliderFragment" />
 
 
 </navigation>
