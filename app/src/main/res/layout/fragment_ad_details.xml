@@ -63,9 +63,10 @@
 
                         <ImageView
                             android:id="@+id/backArrow"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:src="@drawable/ic_arrow_back_black"
+                            android:layout_width="?actionBarSize"
+                            android:layout_height="?actionBarSize"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_circle_arrow"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
