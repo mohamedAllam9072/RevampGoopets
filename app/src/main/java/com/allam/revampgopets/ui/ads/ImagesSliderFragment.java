@@ -27,9 +27,9 @@ public class ImagesSliderFragment extends Fragment implements SliderAdapter.onIt
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_images_slider, container, false);
-
+        binding.backArrow.setOnClickListener(view -> requireActivity().onBackPressed());
         if (getArguments() != null) {
-            adItem = (AdData) getArguments().getSerializable("AD_ITEM2");
+            adItem = (AdData) getArguments().getSerializable("AD_ITEM");
             slider(adItem.getImages());
         }
         return binding.getRoot();

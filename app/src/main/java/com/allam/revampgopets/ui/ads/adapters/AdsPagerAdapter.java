@@ -1,4 +1,4 @@
-package com.allam.revampgopets.ui.ads;
+package com.allam.revampgopets.ui.ads.adapters;
 
 import android.content.Context;
 
@@ -9,6 +9,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.allam.revampgopets.R;
+import com.allam.revampgopets.ui.ads.AdoptedAnimalsFragment;
+import com.allam.revampgopets.ui.ads.MatedAnimalsFragment;
+import com.allam.revampgopets.ui.ads.SellBuyFragment;
 
 
 public class AdsPagerAdapter extends FragmentPagerAdapter {

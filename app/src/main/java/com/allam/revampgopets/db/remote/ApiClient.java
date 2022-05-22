@@ -1,10 +1,11 @@
 package com.allam.revampgopets.db.remote;
 
-import com.allam.revampgopets.ui.ads.models.ads.AdRequest;
-import com.allam.revampgopets.ui.ads.models.ads.AdResponse;
 import com.allam.revampgopets.db.models.content.category.CategoryResponse;
 import com.allam.revampgopets.db.models.content.city.CityResponse;
 import com.allam.revampgopets.ui.ads.models.AdDetails.AdDetailsResponse;
+import com.allam.revampgopets.ui.ads.models.adOwner.AdOwnerResponse;
+import com.allam.revampgopets.ui.ads.models.ads.AdRequest;
+import com.allam.revampgopets.ui.ads.models.ads.AdResponse;
 import com.allam.revampgopets.utils.Constants;
 import com.allam.revampgopets.utils.LanguageUtils;
 import com.allam.revampgopets.utils.TokenUtils;
@@ -82,5 +83,17 @@ public class ApiClient {
 
     public Observable<AdDetailsResponse> adDetailsSellBuy(int AdId) {
         return apiServices.adDetailsSellBuy(AdId);
+    }
+
+    public Observable<AdOwnerResponse> adOwnerProfileSellBuy(int profileId) {
+        return apiServices.adOwnerProfileSellBuy(profileId);
+    }
+
+    public Observable<AdOwnerResponse> adOwnerProfileMatedAnimals(int profileId) {
+        return apiServices.adOwnerProfileMatedAnimals(profileId);
+    }
+
+    public Observable<AdOwnerResponse> adOwnerProfileAdoptedAnimals(int profileId) {
+        return apiServices.adOwnerProfileAdoptedAnimals(profileId);
     }
 }

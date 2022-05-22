@@ -16,6 +16,7 @@ import com.allam.revampgopets.databinding.FragmentAdDetailsBinding;
 import com.allam.revampgopets.ui.ads.adapters.SliderAdapter;
 import com.allam.revampgopets.ui.ads.models.AdDetails.Images;
 import com.allam.revampgopets.ui.ads.models.ads.AdData;
+import com.allam.revampgopets.ui.ads.viewModels.AdDetailsViewModel;
 import com.allam.revampgopets.utils.MyUtils;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
@@ -60,7 +61,7 @@ public class AdDetailsFragment extends Fragment implements SliderAdapter.onItemC
     private void getAdDetails(int adId) {
         adDetailsViewModel.adDetails(adId);
         adDetailsViewModel.adDetailsSellBuyResponseLiveData.observe(getViewLifecycleOwner(), adDetailsResponse -> {
-            AdData adItem = adDetailsResponse.getData();
+            adItem = adDetailsResponse.getData();
             binding.title.setText(adDetailsResponse.getData().getTitle());
             binding.price.setText(adItem.getPrice() + " " + getString(R.string.egp));
             binding.time.setText(MyUtils.formatDate(adItem.getUpdated_at()));
@@ -68,8 +69,8 @@ public class AdDetailsFragment extends Fragment implements SliderAdapter.onItemC
             binding.name.setText(adItem.getClient().getName());
             binding.descriptionContent.setText(adItem.getBio());
             MyUtils.mPicasso(getContext(), adItem.getClient().getImage(), binding.profileImage);
-            //addSliderImages(adItem.getImages());
             slider(adItem.getImages());
+            openAdOwnerProfile();
         });
         adDetailsViewModel.errorMessageMutableLiveData.observe(getViewLifecycleOwner(), errorMessage -> {
 
@@ -89,18 +90,18 @@ public class AdDetailsFragment extends Fragment implements SliderAdapter.onItemC
         binding.imageSlider.startAutoCycle();
     }
 
-    private void addSliderImages(List<Images> images) {
-        sliderImagesList.clear();
-        for (int i = 0; i < images.size(); i++) {
-            Images item = images.get(i);
-            sliderImagesList.add(new Images(item.getId(), item.getImage()));
-        }
+    private void openAdOwnerProfile() {
+        binding.clientDetailsLayout.setOnClickListener(view -> {
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("AD_ITEM", adItem);
+            Navigation.findNavController(getView()).navigate(R.id.action_adDetailsFragment_to_adOwnerProfileFragment, bundle);
+        });
     }
 
     @Override
     public void onItemClick() {
         Bundle bundle = new Bundle();
-        bundle.putSerializable("AD_ITEM2", sliderImagesList);
+        bundle.putSerializable("AD_ITEM", adItem);
         Navigation.findNavController(getView()).navigate(R.id.action_adDetailsFragment_to_imagesSliderFragment, bundle);
     }
 }

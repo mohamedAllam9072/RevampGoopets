@@ -53,11 +53,18 @@
         <action
             android:id="@+id/action_adDetailsFragment_to_imagesSliderFragment"
             app:destination="@id/imagesSliderFragment" />
+        <action
+            android:id="@+id/action_adDetailsFragment_to_adOwnerProfileFragment"
+            app:destination="@id/adOwnerProfileFragment" />
     </fragment>
     <fragment
         android:id="@+id/imagesSliderFragment"
         android:name="com.allam.revampgopets.ui.ads.ImagesSliderFragment"
         android:label="ImagesSliderFragment" />
+    <fragment
+        android:id="@+id/adOwnerProfileFragment"
+        android:name="com.allam.revampgopets.ui.ads.AdOwnerProfileFragment"
+        android:label="AdOwnerProfileFragment" />
 
 
 </navigation>

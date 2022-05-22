@@ -73,10 +73,9 @@
 
                         <ImageView
                             android:id="@+id/share"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_marginEnd="16dp"
-                            android:layout_marginRight="16dp"
+                            android:layout_width="?actionBarSize"
+                            android:layout_height="?actionBarSize"
+                            android:padding="10dp"
                             android:src="@drawable/ic_share"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -153,88 +152,100 @@
                     app:layout_constraintStart_toEndOf="@+id/time"
                     app:layout_constraintTop_toTopOf="@id/time" />
 
-                <TextView
-                    android:id="@+id/wordAdvertiser"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:lineSpacingExtra="8sp"
-                    android:text="@string/advertiser"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/location" />
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/profileImage"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="16dp"
-                    android:src="@drawable/ic_account"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/wordAdvertiser" />
-
-                <TextView
-                    android:id="@+id/name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginLeft="12dp"
-                    android:lineSpacingExtra="3sp"
-                    android:textAlignment="viewStart"
-                    android:textColor="@color/black12"
-                    android:textSize="16sp"
-                    app:layout_constraintStart_toEndOf="@+id/profileImage"
-                    app:layout_constraintTop_toTopOf="@+id/profileImage" />
-
-                <TextView
-                    android:id="@+id/viewProfile"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginTop="8dp"
-                    android:lineSpacingExtra="2sp"
-                    android:text="@string/view_profile"
-                    android:textAlignment="viewStart"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="14sp"
-                    app:layout_constraintStart_toEndOf="@+id/profileImage"
-                    app:layout_constraintTop_toBottomOf="@+id/name" />
-
-                <ImageView
-                    android:visibility="gone"
-                    android:id="@+id/message"
-                    android:layout_width="54dp"
-                    android:layout_height="36dp"
-                    android:layout_marginStart="65dp"
-                    android:layout_marginLeft="65dp"
-                    android:src="@drawable/ic_message2"
-                    app:layout_constraintBottom_toBottomOf="@+id/viewProfile"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/name" />
-
-                <ImageView
-                    android:visibility="gone"
-                    android:id="@+id/call"
-                    android:layout_width="54dp"
-                    android:layout_height="36dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginEnd="12dp"
-                    android:layout_marginRight="12dp"
-                    android:src="@drawable/ic_call"
-                    app:layout_constraintBottom_toBottomOf="@+id/message"
-                    app:layout_constraintEnd_toStartOf="@id/message"
-                    app:layout_constraintTop_toTopOf="@+id/name"
-                    app:layout_constraintVertical_bias="1.0" />
-
-                <View
-                    android:id="@+id/line"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clientDetailsLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="20dp"
-                    android:background="#dfe2e5"
-                    app:layout_constraintTop_toBottomOf="@id/viewProfile" />
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/location">
+
+                    <TextView
+                        android:id="@+id/wordAdvertiser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:lineSpacingExtra="8sp"
+                        android:text="@string/advertiser"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileImage"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/circle1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/wordAdvertiser" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:lineSpacingExtra="3sp"
+                        android:text="@string/advertiser"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black12"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@+id/profileImage"
+                        app:layout_constraintTop_toTopOf="@+id/profileImage" />
+
+                    <TextView
+                        android:id="@+id/viewProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="2dp"
+                        android:lineSpacingExtra="2sp"
+                        android:text="@string/view_profile"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/profileImage"
+                        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+                    <ImageView
+                        android:id="@+id/message"
+                        android:layout_width="54dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="65dp"
+                        android:layout_marginLeft="65dp"
+                        android:src="@drawable/ic_message2"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@+id/viewProfile"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/name" />
+
+                    <ImageView
+                        android:id="@+id/call"
+                        android:layout_width="54dp"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/ic_call"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@+id/message"
+                        app:layout_constraintEnd_toStartOf="@id/message"
+                        app:layout_constraintTop_toTopOf="@+id/name"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#dfe2e5"
+                        app:layout_constraintTop_toBottomOf="@id/viewProfile" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
 
                 <TextView
                     android:id="@+id/wordDescription"
@@ -247,7 +258,7 @@
                     android:textColor="@color/black12"
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/line" />
+                    app:layout_constraintTop_toBottomOf="@id/clientDetailsLayout" />
 
                 <TextView
                     android:id="@+id/descriptionContent"

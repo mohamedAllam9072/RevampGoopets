@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 
 import com.allam.revampgopets.R;
 import com.allam.revampgopets.databinding.FragmentAdsBinding;
+import com.allam.revampgopets.ui.ads.adapters.AdsPagerAdapter;
 import com.allam.revampgopets.utils.Constants;
 import com.allam.revampgopets.utils.ScreenType;
 

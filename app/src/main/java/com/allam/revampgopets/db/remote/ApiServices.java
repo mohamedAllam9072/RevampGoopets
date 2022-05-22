@@ -3,6 +3,7 @@ package com.allam.revampgopets.db.remote;
 import com.allam.revampgopets.db.models.content.category.CategoryResponse;
 import com.allam.revampgopets.db.models.content.city.CityResponse;
 import com.allam.revampgopets.ui.ads.models.AdDetails.AdDetailsResponse;
+import com.allam.revampgopets.ui.ads.models.adOwner.AdOwnerResponse;
 import com.allam.revampgopets.ui.ads.models.ads.AdResponse;
 
 import io.reactivex.rxjava3.core.Observable;
@@ -39,5 +40,12 @@ public interface ApiServices {
             @Query("search") String searchText,
             @Query("page") int page);
 
+    @GET("advertisements/sell-buy/profile/{profileID}")
+    Observable<AdOwnerResponse> adOwnerProfileSellBuy(@Path("profileID") int profileID);
 
+    @GET("advertisements/adopted-animals/profile/{profileID}")
+    Observable<AdOwnerResponse> adOwnerProfileAdoptedAnimals(@Path("profileID") int profileID);
+
+    @GET("advertisements/mated-animals/profile/{profileID}")
+    Observable<AdOwnerResponse> adOwnerProfileMatedAnimals(@Path("profileID") int profileID);
 }

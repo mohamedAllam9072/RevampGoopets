@@ -1,15 +1,13 @@
-package com.allam.revampgopets.ui.ads;
+package com.allam.revampgopets.ui.ads.viewModels;
 
 import androidx.lifecycle.ViewModel;
 
-import com.allam.revampgopets.ui.ads.models.AdDetails.AdDetailsResponse;
-import com.allam.revampgopets.utils.SingleMutableLiveData;
 import com.allam.revampgopets.db.Repos.AdsRepo;
 import com.allam.revampgopets.ui.ads.models.AdDetails.AdDetailsResponse;
 import com.allam.revampgopets.utils.SingleMutableLiveData;
 
 public class AdDetailsViewModel extends ViewModel {
-    private AdsRepo adsRepo;
+    private final AdsRepo adsRepo;
     public SingleMutableLiveData<String> errorMessageMutableLiveData;
     public SingleMutableLiveData<AdDetailsResponse> adDetailsSellBuyResponseLiveData;
 
