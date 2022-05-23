@@ -64,7 +64,13 @@
     <fragment
         android:id="@+id/adOwnerProfileFragment"
         android:name="com.allam.revampgopets.ui.ads.AdOwnerProfileFragment"
-        android:label="AdOwnerProfileFragment" />
+        android:label="AdOwnerProfileFragment">
+        <action
+            android:id="@+id/action_adOwnerProfileFragment_to_adDetailsFragment"
+            app:destination="@id/adDetailsFragment"
+            app:popUpTo="@id/adDetailsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 
 
 </navigation>

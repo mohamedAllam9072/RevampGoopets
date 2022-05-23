@@ -28,4 +28,5 @@
     <string name="advertiser">Advertiser</string>
     <string name="view_profile">View Profile</string>
     <string name="description">Description</string>
+    <string name="ad">Ad</string>
 </resources>

@@ -61,19 +61,22 @@ public class AdDetailsFragment extends Fragment implements SliderAdapter.onItemC
     private void getAdDetails(int adId) {
         adDetailsViewModel.adDetails(adId);
         adDetailsViewModel.adDetailsSellBuyResponseLiveData.observe(getViewLifecycleOwner(), adDetailsResponse -> {
+            binding.progressLoading.setVisibility(View.GONE);
             adItem = adDetailsResponse.getData();
             binding.title.setText(adDetailsResponse.getData().getTitle());
             binding.price.setText(adItem.getPrice() + " " + getString(R.string.egp));
             binding.time.setText(MyUtils.formatDate(adItem.getUpdated_at()));
             binding.location.setText(adItem.getCity() + "," + adItem.getRegion());
-            binding.name.setText(adItem.getClient().getName());
+            if (!adItem.getClient().getName().isEmpty()) {
+                binding.name.setText(adItem.getClient().getName());
+            }
             binding.descriptionContent.setText(adItem.getBio());
             MyUtils.mPicasso(getContext(), adItem.getClient().getImage(), binding.profileImage);
             slider(adItem.getImages());
             openAdOwnerProfile();
         });
         adDetailsViewModel.errorMessageMutableLiveData.observe(getViewLifecycleOwner(), errorMessage -> {
-
+            binding.progressLoading.setVisibility(View.GONE);
         });
     }
 

@@ -24,6 +24,8 @@
     <string name="matedAnimals">Mated</string>
     <string name="no_data_available">No Data Available</string>
     <string name="egp">EGP</string>
+    <string name="view_profile">View Profile</string>
     <string name="advertiser">Advertiser</string>
     <string name="description">Description</string>
+    <string name="ad">Ad</string>
 </resources>
