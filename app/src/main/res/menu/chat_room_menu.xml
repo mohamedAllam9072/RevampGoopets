@@ -1,0 +1,48 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/viewContact"
+        android:title="@string/view_contact"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/report"
+        android:title="@string/report"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/block"
+        android:title="@string/block"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/search"
+        android:title="@string/search"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/muteNotifications"
+        android:title="@string/mute_notifications"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/disappearingMessages"
+        android:title="@string/disappearingMessages"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/wallpaper"
+        android:title="@string/wallpaper"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/more"
+        android:title="@string/more"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/videoCall"
+        android:icon="@drawable/ic_videocam"
+        android:title="@string/video_call"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/phoneCall"
+        android:icon="@drawable/ic_call2"
+        android:title="@string/phone_call"
+        app:showAsAction="ifRoom" />
+</menu>

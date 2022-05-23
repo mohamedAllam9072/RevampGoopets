@@ -29,4 +29,19 @@
     <string name="view_profile">View Profile</string>
     <string name="description">Description</string>
     <string name="ad">Ad</string>
+    <string name="edit">Edit</string>
+    <string name="favorite">Favorite</string>
+    <string name="more">More</string>
+    <string name="content_description_search">content description search</string>
+    <string name="content_description_favorite">content  description  favorite</string>
+    <string name="content_description_more">content  description  more</string>
+    <string name="page_title">Page Title</string>
+    <string name="view_contact">View Contact</string>
+    <string name="report">Report</string>
+    <string name="block">Block</string>
+    <string name="mute_notifications">Mute notifications</string>
+    <string name="disappearingMessages">disappearing Messages</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="video_call">Video call</string>
+    <string name="phone_call">Phone call</string>
 </resources>

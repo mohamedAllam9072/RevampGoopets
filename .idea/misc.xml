@@ -6,16 +6,22 @@
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable-hdpi/ic_arrow_back_white.xml" value="0.248" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable-v24/circle.xml" value="0.2055" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable-v24/ic_circle_arrow.xml" value="0.2055" />
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/bg1.xml" value="0.225" />
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/bg2.xml" value="0.225" />
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/bg_white.xml" value="0.225" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/circle1.xml" value="0.2075" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/ic_arrow_back_black.xml" value="0.248" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/ic_arrow_back_white.xml" value="0.248" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/ic_circle_arrow.xml" value="0.1735" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/ic_share.xml" value="0.2135" />
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/ic_videocam.xml" value="0.1755" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/fragment_account.xml" value="0.10520833333333333" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/fragment_ad_details.xml" value="0.2421875" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/fragment_ad_owner_profile.xml" value="0.2421875" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/fragment_ads.xml" value="0.2421875" />
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/fragment_all_chats.xml" value="0.2421875" />
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/fragment_chat_room.xml" value="0.2421875" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/fragment_dashboard.xml" value="0.10520833333333333" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/fragment_filter.xml" value="0.10520833333333333" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/fragment_images_slider.xml" value="0.23802083333333332" />
@@ -23,6 +29,8 @@
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/fragment_notifications.xml" value="0.10520833333333333" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/item_slider.xml" value="0.2421875" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/load_state_item.xml" value="0.2421875" />
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/menu/chat_room_menu.xml" value="0.2421875" />
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/menu/top_app_bar.xml" value="0.181640625" />
         <entry key="..\:/OUT PROJECTS/MyGopests2/app/src/main/res/layout/activity_main.xml" value="0.121875" />
         <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable-v24/bg1.xml" value="0.1825" />
         <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable-v24/ic_adopt_animals.xml" value="0.136" />
