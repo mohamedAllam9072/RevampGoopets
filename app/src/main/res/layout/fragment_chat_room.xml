@@ -7,82 +7,120 @@
 
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ui.allChats.ChatRoomFragment">
+        android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/topBar"
+        <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            android:background="@color/colorPrimary"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="wrap_content">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/backArrow"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="8dp"
-                android:background="@drawable/bg2"
-                android:orientation="horizontal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:toolbarId="@+id/toolbar">
 
-                <ImageView
-                    android:id="@+id/arrow"
-                    android:layout_width="wrap_content"
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/detail_toolbar"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingVertical="10dp"
-                    android:src="@drawable/ic_arrow_back_white"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:text="@string/app_name"
+                    app:layout_collapseMode="pin"
+                    app:menu="@menu/chat_room_menu"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:titleTextColor="@color/black">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/profileImage"
-                    android:layout_width="44dp"
-                    android:layout_height="44dp"
-                    android:layout_margin="2dp"
-                    android:background="@drawable/circle1"
-                    app:civ_border_color="@color/colorPrimary"
-                    app:civ_border_width="1dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/arrow"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/topBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:background="@color/colorPrimary"
+                        app:layout_constraintTop_toTopOf="parent">
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/backArrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
 
-            <TextView
-                android:id="@+id/name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="4dp"
-                android:ellipsize="end"
-                android:ems="12"
-                android:maxLines="1"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@id/backArrow"
-                app:layout_constraintTop_toTopOf="@id/backArrow"
-                tools:text="Name admamdmasm dmasdmasdma" />
+                            android:background="@drawable/bg2"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/userStatus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="4dp"
-                android:ems="12"
-                android:maxLines="1"
-                android:text="Name"
-                android:textColor="@color/white"
-                app:layout_constraintBottom_toBottomOf="@id/backArrow"
-                app:layout_constraintStart_toEndOf="@id/backArrow"
-                app:layout_constraintTop_toBottomOf="@id/name" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                            <ImageView
+                                android:id="@+id/arrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingVertical="10dp"
+                                android:src="@drawable/ic_arrow_back_white"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/profileImage"
+                                android:layout_width="44dp"
+                                android:layout_height="44dp"
+                                android:layout_margin="2dp"
+                                android:background="@drawable/circle1"
+                                app:civ_border_color="@color/colorPrimary"
+                                app:civ_border_width="1dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/arrow"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="4dp"
+                            android:ellipsize="end"
+                            android:ems="10"
+                            android:maxLines="1"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toEndOf="@id/backArrow"
+                            app:layout_constraintTop_toTopOf="@id/backArrow"
+                            tools:text="Name admamdmasm dmasdmasdma" />
+
+                        <TextView
+                            android:id="@+id/userStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="4dp"
+                            android:ems="12"
+                            android:maxLines="1"
+                            android:text="Name"
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="@id/backArrow"
+                            app:layout_constraintStart_toEndOf="@id/backArrow"
+                            app:layout_constraintTop_toBottomOf="@id/name" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.appbar.MaterialToolbar>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!-- Note: A RecyclerView can also be used -->
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <!-- Scrollable content -->
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/newGroup"
+        android:title="@string/newGroup"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/newBroadcast"
+        android:title="@string/newBroadcast"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/linkedDevices"
+        android:title="@string/linkedDevices"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/starredMessages"
+        android:title="@string/starredMessages"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/settings"
+        android:title="@string/Settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search"
+        app:showAsAction="ifRoom" />
+</menu>

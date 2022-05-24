@@ -35,7 +35,7 @@
     <string name="content_description_search">content description search</string>
     <string name="content_description_favorite">content  description  favorite</string>
     <string name="content_description_more">content  description  more</string>
-    <string name="page_title">Page Title</string>
+    <string name="page_title">Chat app</string>
     <string name="view_contact">View Contact</string>
     <string name="report">Report</string>
     <string name="block">Block</string>
@@ -44,4 +44,9 @@
     <string name="wallpaper">Wallpaper</string>
     <string name="video_call">Video call</string>
     <string name="phone_call">Phone call</string>
+    <string name="newGroup">New Group</string>
+    <string name="newBroadcast">New Broadcast</string>
+    <string name="linkedDevices">Linked devices</string>
+    <string name="starredMessages">Starred messages</string>
+    <string name="Settings">Settings</string>
 </resources>

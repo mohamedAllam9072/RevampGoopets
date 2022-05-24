@@ -43,4 +43,9 @@
     <string name="wallpaper">Wallpaper</string>
     <string name="video_call">Video call</string>
     <string name="phone_call">Phone call</string>
+    <string name="newGroup">New Group</string>
+    <string name="newBroadcast">New Broadcast</string>
+    <string name="linkedDevices">Linked devices</string>
+    <string name="starredMessages">Starred messages</string>
+    <string name="Settings">Settings</string>
 </resources>
