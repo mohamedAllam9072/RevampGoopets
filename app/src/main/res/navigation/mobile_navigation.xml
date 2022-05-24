@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/navigation_all_chats"
-        android:name="com.allam.revampgopets.ui.allChats.AllChatsFragment"
+        android:name="com.allam.revampgopets.ui.allChats.mainScreens.AllChatsFragment"
         android:label="@string/title_all_chats"
         tools:layout="@layout/fragment_all_chats" />
 

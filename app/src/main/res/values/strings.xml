@@ -49,4 +49,8 @@
     <string name="linkedDevices">Linked devices</string>
     <string name="starredMessages">Starred messages</string>
     <string name="Settings">Settings</string>
+    <string name="chats">CHATS</string>
+    <string name="status">STATUS</string>
+    <string name="calls">CALLS</string>
+    <string name="camera">CAMERA</string>
 </resources>
