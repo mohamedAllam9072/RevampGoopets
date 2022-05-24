@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chatImage"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:layout_margin="8dp"
+            android:background="@drawable/circle1"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/chatName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:text="@string/app_name"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/chatTime"
+            app:layout_constraintStart_toEndOf="@id/chatImage"
+            app:layout_constraintTop_toTopOf="@id/chatImage" />
+
+        <TextView
+            android:id="@+id/chatTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:text="@string/app_name"
+            android:textAlignment="viewStart"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/chatName"
+            app:layout_constraintTop_toTopOf="@id/chatImage" />
+
+        <TextView
+            android:id="@+id/contentText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAlignment="viewStart"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/chatImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/statusIcon2"
+            app:layout_constraintStart_toEndOf="@id/statusIcon"
+            app:layout_constraintTop_toBottomOf="@id/chatName" />
+
+        <ImageView
+            android:id="@+id/statusIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginHorizontal="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/contentText"
+            app:layout_constraintStart_toEndOf="@id/chatImage"
+            app:layout_constraintTop_toTopOf="@id/contentText" />
+
+        <ImageView
+            android:id="@+id/statusIcon2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginHorizontal="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/contentText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/contentText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

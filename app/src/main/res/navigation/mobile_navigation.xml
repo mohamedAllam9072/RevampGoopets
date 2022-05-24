@@ -23,7 +23,11 @@
         android:id="@+id/navigation_all_chats"
         android:name="com.allam.revampgopets.ui.allChats.mainScreens.AllChatsFragment"
         android:label="@string/title_all_chats"
-        tools:layout="@layout/fragment_all_chats" />
+        tools:layout="@layout/fragment_all_chats">
+        <action
+            android:id="@+id/action_navigation_all_chats_to_chatRoomFragment"
+            app:destination="@id/chatRoomFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_account"
@@ -71,6 +75,10 @@
             app:popUpTo="@id/adDetailsFragment"
             app:popUpToInclusive="true" />
     </fragment>
+    <fragment
+        android:id="@+id/chatRoomFragment"
+        android:name="com.allam.revampgopets.ui.allChats.ChatRoomFragment"
+        android:label="ChatRoomFragment" />
 
 
 </navigation>
