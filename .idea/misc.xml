@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable-hdpi/circle2.xml" value="0.226" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable-hdpi/ic_arrow_back_white.xml" value="0.248" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable-v24/circle.xml" value="0.2055" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable-v24/ic_circle_arrow.xml" value="0.2055" />
@@ -13,8 +14,12 @@
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/circle1.xml" value="0.2075" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/ic_arrow_back_black.xml" value="0.248" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/ic_arrow_back_white.xml" value="0.248" />
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/ic_attach.xml" value="0.176" />
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/ic_call2.xml" value="0.248" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/ic_camera.xml" value="0.181" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/ic_circle_arrow.xml" value="0.1735" />
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/ic_emoticon.xml" value="0.176" />
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/ic_microphone.xml" value="0.176" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/ic_round_message_24.xml" value="0.1395" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/ic_search.xml" value="0.181" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/ic_share.xml" value="0.2135" />
@@ -42,6 +47,7 @@
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/item_message.xml" value="0.2421875" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/item_slider.xml" value="0.2421875" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/load_state_item.xml" value="0.2421875" />
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/x.xml" value="0.24114583333333334" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/menu/all_chats_screen_menu.xml" value="0.2421875" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/menu/chat_room_menu.xml" value="0.2421875" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/menu/top_app_bar.xml" value="0.181640625" />

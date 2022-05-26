@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">RevampGoPets</string>
+    <string name="app_name">Revamp GoPets</string>
     <string name="title_home">الرئيسية</string>
     <string name="title_all_chats">الرسائل</string>
     <string name="title_account">حسابي</string>
@@ -52,4 +52,5 @@
     <string name="status">STATUS</string>
     <string name="calls">CALLS</string>
     <string name="camera">CAMERA</string>
+    <string name="open_microphone_to_record">open Microphone to record</string>
 </resources>

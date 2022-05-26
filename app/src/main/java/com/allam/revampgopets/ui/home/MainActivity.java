@@ -1,6 +1,7 @@
 package com.allam.revampgopets.ui.home;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -33,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
 //        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+        navController.addOnDestinationChangedListener((navController1, navDestination, bundle) -> {
+            switch (navDestination.getId()) {
+                case R.id.chatRoomFragment:
+                    navView.setVisibility(View.GONE);
+                    break;
+                default:
+                    navView.setVisibility(View.VISIBLE);
+            }
+        });
     }
 
 }
