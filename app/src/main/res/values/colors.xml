@@ -22,4 +22,5 @@
     <color name="grey2">#d8d8d8</color>
     <color name="grey4">#aeb2b8</color>
     <color name="grey5">#dfe2e5</color>
+    <color name="dark_bg">#26343D</color>
 </resources>
