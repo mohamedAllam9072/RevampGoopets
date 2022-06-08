@@ -45,7 +45,11 @@
 
         <action
             android:id="@+id/action_adsFragment_to_filterFragment"
-            app:destination="@id/filterFragment" />
+            app:destination="@id/filterFragment"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_adsFragment_to_adDetailsFragment"
             app:destination="@id/adDetailsFragment" />
@@ -78,7 +82,49 @@
     <fragment
         android:id="@+id/chatRoomFragment"
         android:name="com.allam.revampgopets.ui.allChats.ChatRoomFragment"
-        android:label="ChatRoomFragment" />
-
+        android:label="ChatRoomFragment">
+        <action
+            android:id="@+id/action_chatRoomFragment_to_documentsFragment"
+            app:destination="@id/documentsFragment" />
+        <action
+            android:id="@+id/action_chatRoomFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+        <action
+            android:id="@+id/action_chatRoomFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+        <action
+            android:id="@+id/action_chatRoomFragment_to_audioFragment"
+            app:destination="@id/audioFragment" />
+        <action
+            android:id="@+id/action_chatRoomFragment_to_locationFragment"
+            app:destination="@id/locationFragment" />
+        <action
+            android:id="@+id/action_chatRoomFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/documentsFragment"
+        android:name="com.allam.revampgopets.ui.allChats.attachmentSheetScreens.DocumentsFragment"
+        android:label="DocumentsFragment" />
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.allam.revampgopets.ui.allChats.attachmentSheetScreens.CameraFragment"
+        android:label="CameraFragment" />
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.allam.revampgopets.ui.allChats.attachmentSheetScreens.GalleryFragment"
+        android:label="GalleryFragment" />
+    <fragment
+        android:id="@+id/audioFragment"
+        android:name="com.allam.revampgopets.ui.allChats.attachmentSheetScreens.AudioFragment"
+        android:label="AudioFragment" />
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.allam.revampgopets.ui.allChats.attachmentSheetScreens.LocationFragment"
+        android:label="LocationFragment" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.allam.revampgopets.ui.allChats.attachmentSheetScreens.ContactFragment"
+        android:label="ContactFragment" />
 
 </navigation>

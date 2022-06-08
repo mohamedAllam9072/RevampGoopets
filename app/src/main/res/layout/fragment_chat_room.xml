@@ -122,75 +122,99 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_margin="2dp"
-            android:paddingHorizontal="4dp">
+            android:paddingHorizontal="4dp"
+            app:layout_constraintTop_toTopOf="parent">
 
+            <include
+                android:id="@+id/sheetAttachments"
+                layout="@layout/sheet_send_attachments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@id/mainInputLayout" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="0dp"
+                android:id="@+id/mainInputLayout"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="2dp"
                 android:background="@drawable/bg2"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="45dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/microphoneBTN"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintStart_toStartOf="parent">
 
                 <ImageView
                     android:id="@+id/emojiBTN"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
+                    android:layout_margin="2dp"
                     android:padding="4dp"
                     android:src="@drawable/ic_emoticon"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent" />
 
                 <androidx.appcompat.widget.AppCompatEditText
-                    android:id="@+id/messageET"
+                    android:id="@+id/messageBodyEditText"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:backgroundTint="@color/grey4"
                     android:hint="Message"
+                    android:maxLines="6"
+
                     android:textColor="@color/white"
                     android:textColorHint="@color/white"
-                    app:layout_constraintEnd_toStartOf="@id/attachBTN"
+                    app:layout_constraintEnd_toStartOf="@id/attachmentBTN"
                     app:layout_constraintStart_toEndOf="@id/emojiBTN" />
 
                 <ImageView
                     android:id="@+id/cameraBTN"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
+                    android:layout_margin="2dp"
                     android:padding="8dp"
                     android:src="@drawable/ic_camera"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintEnd_toEndOf="parent" />
 
                 <ImageView
-                    android:id="@+id/attachBTN"
+                    android:id="@+id/attachmentBTN"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
+                    android:layout_margin="2dp"
                     android:padding="8dp"
                     android:src="@drawable/ic_attach"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@id/cameraBTN"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintEnd_toStartOf="@id/cameraBTN" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <ImageView
                 android:id="@+id/microphoneBTN"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:layout_margin="2dp"
                 android:background="@drawable/circle2"
                 android:contentDescription="@string/open_microphone_to_record"
                 android:padding="8dp"
+
                 android:src="@drawable/ic_microphone"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/sendBTN"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/circle2"
+                android:contentDescription="@string/open_microphone_to_record"
+                android:padding="8dp"
+                android:src="@drawable/ic_send"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

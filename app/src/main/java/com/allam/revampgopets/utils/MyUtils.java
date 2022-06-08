@@ -2,15 +2,19 @@ package com.allam.revampgopets.utils;
 
 import android.app.Activity;
 import android.content.Context;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageView;
 
 import com.allam.revampgopets.R;
+import com.google.android.material.textfield.TextInputLayout;
 import com.squareup.picasso.Picasso;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Objects;
 import java.util.TimeZone;
 
 public class MyUtils {
@@ -38,5 +42,23 @@ public class MyUtils {
         SimpleDateFormat sdf = new SimpleDateFormat("EEE, dd MMM yyyy "); // the format of your date
         sdf.setTimeZone(TimeZone.getTimeZone("GMT-4"));
         return sdf.format(date);
+    }
+
+    public static void mWatcher(TextInputLayout textInputLayout) {
+        Objects.requireNonNull(textInputLayout.getEditText()).addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                textInputLayout.setError(null);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
     }
 }
