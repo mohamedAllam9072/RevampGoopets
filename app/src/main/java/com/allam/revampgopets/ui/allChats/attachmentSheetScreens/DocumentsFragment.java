@@ -1,19 +1,60 @@
 package com.allam.revampgopets.ui.allChats.attachmentSheetScreens;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
 import com.allam.revampgopets.R;
+import com.allam.revampgopets.databinding.FragmentDocomentsBinding;
 
 public class DocumentsFragment extends Fragment {
+    private static final String TAG = "DocumentsFragment";
+    private FragmentDocomentsBinding binding;
+
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_docoments, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_docoments, container, false);
+        binding.backArrow.setOnClickListener(view -> requireActivity().onBackPressed());
+        return binding.getRoot();
+
     }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        setHasOptionsMenu(true);
+        super.onCreate(savedInstanceState);
+
+    }
+
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+        inflater.inflate(R.menu.decument_fragment_menu, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.sortByName:
+                Log.d(TAG, "onOptionsItemSelected: sortByName");
+                return true;
+            case R.id.sortByDate:
+                Log.d(TAG, "onOptionsItemSelected: sortByDate");
+                return true;
+            default:
+                return super.onContextItemSelected(item);
+        }
+    }
+
+
 }

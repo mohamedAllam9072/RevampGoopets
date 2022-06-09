@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/sortByName"
+        android:title="@string/sortByName"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sortByDate"
+        android:title="@string/sortByDate"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search"
+        app:showAsAction="ifRoom" />
+</menu>

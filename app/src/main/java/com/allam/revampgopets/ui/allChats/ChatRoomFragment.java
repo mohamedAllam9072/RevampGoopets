@@ -1,5 +1,7 @@
 package com.allam.revampgopets.ui.allChats;
 
+import android.app.Activity;
+import android.graphics.Rect;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -19,7 +21,7 @@ import java.util.Objects;
 
 public class ChatRoomFragment extends Fragment implements OneChatAdapter.OnClick {
     private FragmentChatRoomBinding binding;
-
+    private static final String TAG = "ChatRoomFragment";
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_chat_room, container, false);
@@ -34,31 +36,13 @@ public class ChatRoomFragment extends Fragment implements OneChatAdapter.OnClick
         binding.recyclerView.setAdapter(oneChatAdapter);
     }
 
-    private void handleInputViews() {
-        Objects.requireNonNull(binding.messageBodyEditText).addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                if (charSequence.length() != 0) {
-                    binding.cameraBTN.setVisibility(View.GONE);
-                    binding.microphoneBTN.setVisibility(View.GONE);
-                    binding.sendBTN.setVisibility(View.VISIBLE);
-                } else {
-                    binding.cameraBTN.setVisibility(View.VISIBLE);
-                    binding.microphoneBTN.setVisibility(View.VISIBLE);
-                    binding.sendBTN.setVisibility(View.GONE);
-                }
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable editable) {
-
-            }
-        });
+    public static boolean isKeyboardVisible(Activity activity) {
+        Rect r = new Rect();
+        View contentView = activity.findViewById(android.R.id.content);
+        contentView.getWindowVisibleDisplayFrame(r);
+        int screenHeight = contentView.getRootView().getHeight();
+        int keypadHeight = screenHeight - r.bottom;
+        return (keypadHeight > screenHeight * 0.15);
     }
 
     @Override
@@ -93,6 +77,37 @@ public class ChatRoomFragment extends Fragment implements OneChatAdapter.OnClick
         binding.sheetAttachments.attachContact.setOnClickListener(view -> {
             binding.sheetAttachments.sheetMainView.setVisibility(View.GONE);
             Navigation.findNavController(view).navigate(R.id.action_chatRoomFragment_to_contactFragment);
+        });
+    }
+
+    private void handleInputViews() {
+        Objects.requireNonNull(binding.messageBodyEditText).addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                if (isKeyboardVisible(requireActivity())) {
+
+                } else {
+
+                }
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                if (charSequence.length() != 0) {
+                    binding.cameraBTN.setVisibility(View.GONE);
+                    binding.microphoneBTN.setVisibility(View.GONE);
+                    binding.sendBTN.setVisibility(View.VISIBLE);
+                } else {
+                    binding.cameraBTN.setVisibility(View.VISIBLE);
+                    binding.microphoneBTN.setVisibility(View.VISIBLE);
+                    binding.sendBTN.setVisibility(View.GONE);
+                }
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+            }
         });
     }
 }

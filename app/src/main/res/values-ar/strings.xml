@@ -53,4 +53,7 @@
     <string name="calls">CALLS</string>
     <string name="camera">CAMERA</string>
     <string name="open_microphone_to_record">open Microphone to record</string>
+    <string name="sort">Sort</string>
+    <string name="sortByName">Sort by name</string>
+    <string name="sortByDate">Sort by date</string>
 </resources>

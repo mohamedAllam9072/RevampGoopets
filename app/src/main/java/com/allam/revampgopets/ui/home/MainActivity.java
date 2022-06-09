@@ -36,11 +36,11 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(binding.navView, navController);
         navController.addOnDestinationChangedListener((navController1, navDestination, bundle) -> {
             switch (navDestination.getId()) {
-                case R.id.chatRoomFragment:
-                    navView.setVisibility(View.GONE);
+                case R.id.navigation_home:
+                    navView.setVisibility(View.VISIBLE);
                     break;
                 default:
-                    navView.setVisibility(View.VISIBLE);
+                    navView.setVisibility(View.GONE);
             }
         });
     }
