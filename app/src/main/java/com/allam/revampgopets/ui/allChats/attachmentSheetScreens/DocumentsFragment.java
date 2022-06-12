@@ -8,6 +8,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.PopupMenu;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,6 +27,23 @@ public class DocumentsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_docoments, container, false);
         binding.backArrow.setOnClickListener(view -> requireActivity().onBackPressed());
+        binding.sortBTN.setOnClickListener(view -> {
+            PopupMenu popup = new PopupMenu(requireContext(), binding.sortBTN);
+            //Inflating the Popup using xml file
+            popup.getMenuInflater().inflate(R.menu.decument_fragment_menu, popup.getMenu());
+
+            //registering popup with OnMenuItemClickListener
+            popup.setOnMenuItemClickListener(item -> {
+                Toast.makeText(
+                        requireContext(),
+                        "You Clicked : " + item.getTitle(),
+                        Toast.LENGTH_SHORT
+                ).show();
+                return true;
+            });
+
+            popup.show(); //showing popup menu
+        });
         return binding.getRoot();
 
     }

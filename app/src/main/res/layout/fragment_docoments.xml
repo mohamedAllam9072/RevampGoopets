@@ -13,36 +13,76 @@
         android:background="@color/dark_bg"
         tools:context=".ui.allChats.attachmentSheetScreens.DocumentsFragment">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            app:layout_constraintTop_toTopOf="parent"
-            app:menu="@menu/decument_fragment_menu">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="?actionBarSize"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <ImageView
-                    android:id="@+id/backArrow"
-                    android:layout_width="?actionBarSize"
-                    android:layout_height="?actionBarSize"
-                    android:padding="12dp"
-                    android:src="@drawable/ic_arrow_back"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.appcompat.widget.Toolbar>
-
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/topBar"
             android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:padding="12dp"
+                android:src="@drawable/ic_arrow_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="?actionBarSize"
+                android:gravity="center"
+                android:text="Documents"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/backArrow"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/sortBTN"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:padding="15dp"
+                android:src="@drawable/ic_round_sort_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="wrap_content"
+                android:layout_height="?actionBarSize"
+                android:background="@color/dark_bg"
+                app:layout_constraintEnd_toStartOf="@id/sortBTN"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/openFileDir"
+            android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:background="@color/grey"
             android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+            app:layout_constraintTop_toBottomOf="@id/topBar">
+
+            <ImageView
+                android:layout_width="?actionBarSize"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_view_list_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Browse other docs..."
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@id/backArrow"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
@@ -52,6 +92,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/topBar" />
+            app:layout_constraintTop_toBottomOf="@id/openFileDir" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -9,11 +9,4 @@
         android:id="@+id/sortByDate"
         android:title="@string/sortByDate"
         app:showAsAction="never" />
-
-
-    <item
-        android:id="@+id/search"
-        android:icon="@drawable/ic_search"
-        android:title="@string/search"
-        app:showAsAction="ifRoom" />
 </menu>
