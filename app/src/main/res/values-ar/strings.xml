@@ -56,4 +56,7 @@
     <string name="sort">Sort</string>
     <string name="sortByName">Sort by name</string>
     <string name="sortByDate">Sort by date</string>
+    <string name="inviteAFriend">Invite A Friend</string>
+    <string name="contacts">Contacts</string>
+    <string name="help">Help</string>
 </resources>

@@ -27,6 +27,9 @@
         <action
             android:id="@+id/action_navigation_all_chats_to_chatRoomFragment"
             app:destination="@id/chatRoomFragment" />
+        <action
+            android:id="@+id/action_navigation_all_chats_to_selectContactActivity"
+            app:destination="@id/selectContactActivity" />
     </fragment>
 
     <fragment
@@ -126,5 +129,9 @@
         android:id="@+id/contactFragment"
         android:name="com.allam.revampgopets.ui.allChats.attachmentSheetScreens.ContactFragment"
         android:label="ContactFragment" />
+    <activity
+        android:id="@+id/selectContactActivity"
+        android:name="com.allam.revampgopets.ui.allChats.mainScreens.SelectContactActivity"
+        android:label="SelectContactActivity" />
 
 </navigation>

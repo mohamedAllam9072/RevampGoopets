@@ -39,6 +39,7 @@
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/drawable/ic_videocam.xml" value="0.1755" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/activity_chat_main.xml" value="0.24114583333333334" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/activity_select_contact.xml" value="0.2421875" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/fragment_account.xml" value="0.2421875" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/fragment_ad_details.xml" value="0.2421875" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/fragment_ad_owner_profile.xml" value="0.2421875" />
@@ -68,11 +69,13 @@
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/load_state_item.xml" value="0.2421875" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/sheet1.xml" value="0.2421875" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/sheet_send_attachments.xml" value="0.2421875" />
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/tool_bar.xml" value="0.2421875" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/x.xml" value="0.1574074074074074" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/layout/y.xml" value="0.24114583333333334" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/menu/all_chats_screen_menu.xml" value="0.2421875" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/menu/chat_room_menu.xml" value="0.2421875" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/menu/decument_fragment_menu.xml" value="0.2421875" />
+        <entry key="..\:/Android projects/RevampGopets/app/src/main/res/menu/select_contact_menu.xml" value="0.2421875" />
         <entry key="..\:/Android projects/RevampGopets/app/src/main/res/menu/top_app_bar.xml" value="0.181640625" />
         <entry key="..\:/OUT PROJECTS/MyGopests2/app/src/main/res/layout/activity_main.xml" value="0.121875" />
         <entry key="..\:/OUT PROJECTS/New folder (3)/MyGopests2/app/src/main/res/drawable-v24/bg1.xml" value="0.1825" />

@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
 
 import com.allam.revampgopets.R;
 import com.allam.revampgopets.databinding.FragmentAllChatsBinding;
@@ -27,6 +28,11 @@ public class AllChatsFragment extends Fragment {
         pagerAdapter = new ChatPagerAdapter(getContext(), getChildFragmentManager());
         binding.viewPager.setAdapter(pagerAdapter);
         binding.tabs.setupWithViewPager(binding.viewPager);
+
+        binding.selectConatctBTN.setOnClickListener(view -> {
+            Navigation.findNavController(view).navigate(R.id.action_navigation_all_chats_to_selectContactActivity);
+        });
+
         return binding.getRoot();
     }
 
