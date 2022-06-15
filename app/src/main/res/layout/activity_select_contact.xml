@@ -23,5 +23,56 @@
             app:title="Select Contact">
 
         </com.google.android.material.appbar.MaterialToolbar>
+
+        <Button
+            android:id="@+id/insertChatOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="insert"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_app_toolbar" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="update"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/insertChatOwner" />
+
+        <Button
+            android:id="@+id/viewALlChatsOwners"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_bg"
+            android:gravity="center"
+            android:text="view ALl"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/update" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:background="@color/grey"
+            android:textColor="@color/black2"
+            app:layout_constraintBottom_toBottomOf="@id/update"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/update"
+            app:layout_constraintTop_toTopOf="@id/update" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/black2"
+            android:gravity="center"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewALlChatsOwners" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

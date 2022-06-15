@@ -1,6 +1,12 @@
 package com.allam.revampgopets.ui.allChats.models;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "chatOwnerTable")
 public class ChatModel {
+    @PrimaryKey(autoGenerate = true)
+    private long id;
     private String chatImage;
     private String chatName;
     private String lastMessage;
@@ -13,6 +19,18 @@ public class ChatModel {
         this.lastMessage = lastMessage;
         this.time = time;
         this.status = status;
+    }
+
+    public ChatModel() {
+
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getChatImage() {
